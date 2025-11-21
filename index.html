@@ -22,15 +22,7 @@
     </ul>
   </nav>
 </header>
-  <span id="menu-btn">&#9776;</span>
-
-<div class="mobile-menu" id="mobile-menu">
-  <a href="#home">Home</a>
-  <a href="#profile">Profile</a>
-  <a href="#services">Services</a>
-  <a href="#clients">Clients</a>
-  <a href="#contact">Contact</a>
-</div>
+  
 
   <section class="hero">
     <h1>Welcome to <span>RLI Technosoft</span></h1>
@@ -45,20 +37,7 @@
   <p>© 2025 RLI Technosoft</p>
   </footer>
 </body>
-  <script>
-const menuBtn = document.getElementById("menu-btn");
-const mobileMenu = document.getElementById("mobile-menu");
-
-menuBtn.addEventListener("click", () => {
-    mobileMenu.style.display = 
-        mobileMenu.style.display === "flex" ? "none" : "flex";
-});
-
-// Close menu when clicking any link
-document.querySelectorAll(".mobile-menu a").forEach((link) => {
-    link.addEventListener("click", () => mobileMenu.style.display = "none");
-});
-</script>
 </html>
+
 
 
