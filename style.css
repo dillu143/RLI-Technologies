@@ -432,3 +432,63 @@ nav a:hover, .active { color: #00aaff; }
     background-color: #0056b3;
     background-image: linear-gradient(45deg, #0056b3, #007BFF);
   }
+header {
+    width: 100%;
+    background: #003366;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* MOBILE FIX */
+@media (max-width: 900px) {
+
+    nav {
+        display: none;   /* hide desktop menu on mobile */
+    }
+
+    #menu-btn {
+        display: block;
+        font-size: 32px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .mobile-menu {
+        display: none;
+        flex-direction: column;
+        background: #003366;
+        width: 100%;
+        padding: 10px 0;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        z-index: 1000;
+    }
+
+    .mobile-menu a {
+        padding: 12px;
+        text-align: center;
+        color: white;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        font-size: 20px;
+    }
+}
+
